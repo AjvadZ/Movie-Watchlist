@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Watchlist</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <img src="./assets/header.png">
+        <div>
+            <h1 >Find your Movie</h1>
+            <a href="./watchlist/watchlist.html">My Watchlist</a>
+        </div>
+        
+        <form id="movie-form">
+            <label for="movie"></label>
+            <div>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input
+                    type="text" 
+                    placeholder="Search for a movie" 
+                    id="movie" 
+                    name="movie"
+                    required
+                    >
+                </input> 
+            </div>
+            <button type="submit">Search</button>
+        </form>
+    </header>
+
+    <main class="main">
+        
+      <div class="welcome-text">
+            <i class="fa-solid fa-film"></i>
+            <p>Start exploring</p>
+        </div>
+
+
+    </main>
+    <script src="main.js" type="module"></script>
+</body>
+</html>

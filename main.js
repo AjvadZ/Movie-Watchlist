@@ -15,7 +15,7 @@ form.addEventListener('submit', (e)=>{
     let movieName = formData.get('movie')
 
     
-fetch(`http://www.omdbapi.com/?s=${movieName}&apikey=4bb20c9d&plot=full`)
+fetch(`https://www.omdbapi.com/?s=${movieName}&apikey=4bb20c9d&plot=full`)
 .then(res => res.json())
     .then(data => {
         if (data.Response === "True"){
@@ -24,7 +24,7 @@ fetch(`http://www.omdbapi.com/?s=${movieName}&apikey=4bb20c9d&plot=full`)
         let tempMoviesArr = data.Search
 
             const promises = tempMoviesArr.map( movie => 
-                fetch(`http://www.omdbapi.com/?i=${movie.imdbID}&apikey=4bb20c9d&plot=full`)
+                fetch(`https://www.omdbapi.com/?i=${movie.imdbID}&apikey=4bb20c9d&plot=full`)
                 .then(res => res.json())
             )
             Promise.all(promises).then(results =>{

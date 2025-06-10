@@ -33,7 +33,7 @@ function renderMyWatchlist(){
         mainBody.innerHTML = `
         <div class="welcome-text">
             <p class="info">Your watchlist is looking a little empty...</p>
-            <a href="./index.html" class="movie-search"><i class="fa-solid fa-circle-plus"></i> Let's add some movies!</a>
+            <a href="../index.html" class="movie-search"><i class="fa-solid fa-circle-plus"></i> Let's add some movies!</a>
         </div>
         `;
     }
